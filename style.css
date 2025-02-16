@@ -1,0 +1,256 @@
+:root{
+    --textColor: #1a1c20;
+    --linkColor: #1c6b99;
+    /* --linkColor: #4a76ee; */
+    --backgroundColor: #eeeff1;
+    --borderColor: #d3d3d3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid grey; */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--textColor);
+    background-color: var(--backgroundColor);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: var(--linkColor);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+nav .leftNav a{
+    color: var(--textColor);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav .rightNav a{
+    color: var(--textColor);
+    margin: 0 15px;
+}
+
+nav .rightNav a span{
+    margin-left: 3px;
+}
+
+/* hero section */
+
+#hero-section{
+    display: flex;
+    justify-content: space-between; 
+    align-items: end;
+    margin-bottom: 100px;
+    padding: 0 50px;
+    margin: 50px 0;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+#hero-section .text{
+    flex: 5;
+}
+
+#hero-section .text h1{
+    font-size: 45px;
+}
+
+
+#hero-section .links{
+    margin-top: 20px;
+}
+
+#hero-section .links a{
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 2px 5px;
+    border: 1px solid var(--linkColor);
+    border-radius: 5px;
+    color: var(--linkColor);
+    background-color: var(--backgroundColor);
+}
+
+#hero-section .links a:hover{
+    color: var(--backgroundColor);
+    background-color: var(--linkColor);
+    box-shadow: 0 0 3px var(--linkColor);
+}
+
+#hero-section .headshot{
+    flex: 3;
+    display: flex;
+    justify-content: right;
+}
+
+#hero-section .headshot img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+/* skills section */
+
+#skills-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+#skills-section h1{
+    font-size: 35px;
+    text-align: center;
+}
+
+#skills-section .text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#skills-section .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#skills-section .cells .cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--borderColor);
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 200px;
+    margin: 10px;
+    gap: 10px;
+}
+
+#skills-section .cells .cell img{
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+}
+
+
+/* projects section */
+
+#projects-section h1{
+    font-size: 35px;
+    text-align: center;
+}
+
+#projects-section .text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#projects-section .projects{
+    display: flex;
+    margin: 0 50px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#projects-section .projects .project{
+    box-shadow: 0 0 5px #d3d3d3;
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+    margin: 15px;
+    padding: 20px;
+    background-color: white;
+}
+
+#projects-section .projects .project h4{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#projects-section .projects .project .description{
+    height: 80px;
+    width: 360px;
+    overflow: hidden;
+    color: grey;   
+}
+
+#projects-section .projects .project .links{
+    margin-top: 15px;
+}
+
+#projects-section .projects .project a{
+    color: var(--linkColor);
+    border: 1px solid var(--linkColor);
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#projects-section .projects .project a:hover{
+    color: var(--backgroundColor);
+    background-color: var(--linkColor);
+    box-shadow: 0 0 3px var(--linkColor);
+}
+
+/* contact section */
+
+#contact-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+#contact-section h1{
+    font-size: 35px;
+}
+
+#contact-section .container{
+    display: flex;
+    gap: 50px;
+}
+
+#contact-section .text{
+    flex: 1;
+}
+
+#contact-section form{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-section form input, textarea{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    background-color: transparent;
+    border: 2px solid var(--linkColor);
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#contact-section form button{
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 10px;
+    color: var(--backgroundColor);
+    background-color: var(--linkColor);
+    border: 2px solid var(--linkColor);
+}
+
+#contact-section form button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 3px var(--linkColor);
+}
